@@ -10,7 +10,7 @@ const SiteLayout = (props) => {
         <Route {...rest} render={(props) =>{
           return  <Component {...props}/> ;
            }} />
-        <Footer />
+        {/* <Footer /> */}
       </React.Fragment>
     );
 }
