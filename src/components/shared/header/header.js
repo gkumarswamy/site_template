@@ -35,7 +35,7 @@ console.log(scrollBarName,'scrollBarName');
   <div >
     <div class="row mx-0 py-3">
       <div class="col-1 ">
-        <img class="w-100" src="./images/gps-logo-300x200.png" alt=" " />
+        <img class="w-100"  onClick={()=>{ onNavigation(''); }} src="./images/gps-logo-300x200.png" alt=" " />
       </div>
       <div class="col ">
       <div class="row mx-0">
@@ -43,8 +43,8 @@ console.log(scrollBarName,'scrollBarName');
           <h3 class="m-0">GPS – Global Partner Success Portal</h3>
         </div>
         <div class="col-12 nav-menu">
-          <a href="">Home</a>
-          <a href="">Meet The Team</a>
+          <a  onClick={()=>{ onNavigation(''); }}>Home</a>
+          <a  onClick={()=>{ onNavigation('meet-the-team'); }}>Meet The Team</a>
           <a href="">Explore GPS</a>
           <a href="">Our Delivery Partners</a>
           <a href="">Tools and Resources</a>

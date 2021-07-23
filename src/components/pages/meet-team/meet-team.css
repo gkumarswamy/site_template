@@ -1,0 +1,8 @@
+.bg-service-box{
+    height: 256px;
+}
+.bg-service-box .full-width-position-box{
+    background-size: cover;
+    width: 94%;
+    margin: 0 4%;
+}

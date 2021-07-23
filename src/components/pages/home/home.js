@@ -1,20 +1,16 @@
 import React from 'react';
 import './home.css';
+import { SiteBanner } from '../section'
 
 const Home = () => {
+  const bannerData = {
+    "image":"./images/bg-home.jpg",
+    "title":"Welcome to the Global Partner Success Team",
+    "description":"Raising the Performance, Quality and Compliance bar to derive greater value from our suppliers, delight our customers and enhance the Service Centre brand."
+  }
     return (
         <div>
-          <section class="position-relative">
-            <img className="w-100" src="./images/bg-home.jpg" alt="" />
-            <div className="full-width-position-box">
-              <div className="d-flex h-100 align-items-end">
-                <div className="col-12 col-md-5 m-4 p-5 text-white bg-color1">
-                  <h3>Welcome to the Global Partner Success Team</h3>
-                  <p className="fs-20 m-0">Raising the Performance, Quality and Compliance bar to derive greater value from our suppliers, delight our customers and enhance the Service Centre brand.</p>
-                </div>
-              </div>
-            </div>
-          </section>
+          <SiteBanner bannerData={bannerData} />
           <section class="position-relative bg-color2 py-3">
             <div className="d-flex align-items-stretch">
               <div className="col-12 col-md-9 px-3">

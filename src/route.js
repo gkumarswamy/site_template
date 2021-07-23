@@ -5,13 +5,14 @@ import {
     Route,
     Link
   } from "react-router-dom";
-  import {Home} from "./components/pages";
+  import {Home, MeetTeam} from "./components/pages";
   import { SiteLayout } from "./components/shared";
 
 const Routes = () => {
     return (
       <Switch>
         <SiteLayout path="/home" component={Home} pagename={'home'} />
+        <SiteLayout path="/meet-the-team" component={MeetTeam} pagename={'meetteam'} />
 
         <SiteLayout path=""component={Home} pagename={'home'} />
 
