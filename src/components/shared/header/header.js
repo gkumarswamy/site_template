@@ -3,7 +3,8 @@ import { useHistory,NavLink } from 'react-router-dom';
 
 import "./header.css";
 
-const Header = () => {
+const Header = (props) => {
+  console.log(props.pagename, 'pagename')
   const history = useHistory();
 
   const [scrollBarName, setScrollBarName] = useState("noscroll")
@@ -43,8 +44,8 @@ console.log(scrollBarName,'scrollBarName');
           <h3 class="m-0">GPS – Global Partner Success Portal</h3>
         </div>
         <div class="col-12 nav-menu">
-          <a  onClick={()=>{ onNavigation(''); }}>Home</a>
-          <a  onClick={()=>{ onNavigation('meet-the-team'); }}>Meet The Team</a>
+          <a className={props.pagename=="home"?'active':''} onClick={()=>{ onNavigation(''); }}>Home</a>
+          <a className={props.pagename=="meetteam"?'active':''} onClick={()=>{ onNavigation('meet-the-team'); }}>Meet The Team</a>
           <a href="">Explore GPS</a>
           <a href="">Our Delivery Partners</a>
           <a href="">Tools and Resources</a>

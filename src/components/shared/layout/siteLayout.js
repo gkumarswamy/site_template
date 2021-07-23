@@ -6,7 +6,7 @@ const SiteLayout = (props) => {
   const { component: Component, pagename:pagename, ...rest} = props;
     return (
       <React.Fragment>
-        <Header />
+        <Header  pagename={pagename} />
         <Route {...rest} render={(props) =>{
           return  <Component {...props}/> ;
            }} />

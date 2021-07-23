@@ -1,3 +1,18 @@
+
+.nav-menu .active{
+    position: relative;
+    cursor: pointer;
+}
+.nav-menu .active::after{
+    background-color: #074FE7;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    z-index: 2;
+    content: "";
+    position: absolute;
+    bottom: -2px;
+}
 .nav-menu a{
     color: #000;
     margin-right: 16px;
