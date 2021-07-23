@@ -44,13 +44,13 @@ console.log(scrollBarName,'scrollBarName');
           <h3 class="m-0">GPS – Global Partner Success Portal</h3>
         </div>
         <div class="col-12 nav-menu">
-          <a className={props.pagename=="home"?'active':''} onClick={()=>{ onNavigation(''); }}>Home</a>
-          <a className={props.pagename=="meetteam"?'active':''} onClick={()=>{ onNavigation('meet-the-team'); }}>Meet The Team</a>
-          <a href="">Explore GPS</a>
-          <a href="">Our Delivery Partners</a>
-          <a href="">Tools and Resources</a>
+          <a href="javascript:void(0)" className={props.pagename=="home"?'active':''} onClick={()=>{ onNavigation(''); }}>Home</a>
+          <a href="javascript:void(0)" className={props.pagename=="meet-the-team"?'active':''} onClick={()=>{ onNavigation('meet-the-team'); }}>Meet The Team</a>
+          <a href="javascript:void(0)" className={props.pagename=="whats-happening"?'active':''} onClick={()=>{ onNavigation('whats-happening'); }}>Explore GPS</a>
+          <a href="javascript:void(0)" className={props.pagename=="our-delivery-partners"?'active':''} onClick={()=>{ onNavigation('our-delivery-partners'); }}>Our Delivery Partners</a>
+          <a  href="javascript:void(0)" className={props.pagename=="business-continuity"?'active':''} onClick={()=>{ onNavigation('business-continuity-planning'); }}>Tools and Resources</a>
           <a href="">Reporting</a>
-          <a href="">Calendar</a>
+          <a href="javascript:void(0)" className={props.pagename=="calendar"?'active':''} onClick={()=>{ onNavigation('calendar'); }}>Calendar</a>
         </div>
       </div>
       </div>
